@@ -19,7 +19,7 @@ const SpecialSymbol = Symbol('Special Symbol');
 })
 export class AppModule {
   constructor(
-    @Optional() @Inject(SpecialSymbol) specialService: SpecialService,
+    @Optional() /* @Inject(SpecialSymbol)  */specialService: SpecialService,
     private moduleRef: ModuleRef,
   ) {
     // It works as expected...
